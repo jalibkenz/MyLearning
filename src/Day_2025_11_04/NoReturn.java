@@ -10,6 +10,14 @@ class NoReturn {
         System.out.println("s->"+s);
         System.out.println("_".repeat(50));
 
+        //StringBuilder
+        StringBuilder sb= new StringBuilder("welcome");
+        stringFxn(sb);
+        System.out.println("sb->"+sb);
+        System.out.println("_".repeat(50));
+
+
+
         //Array
         String[] sArr={"hello", "dear"};
         arrayFxn(sArr);//manipulated
@@ -17,7 +25,7 @@ class NoReturn {
         System.out.println("_".repeat(50));
 
         //Object
-        Student s1=new Student(777);
+        Student s1=new Student(777);//Pass by value only (the memory address is the value)
         objectFxn(s1);//manipulated
         System.out.println("s1.id->"+s1.id);
         System.out.println("_".repeat(50));
@@ -28,6 +36,11 @@ class NoReturn {
     public static void stringFxn(String x){
         x=x+"NEW";
         System.out.println("local scope: x->"+x);
+    }
+
+    public static void stringFxn(StringBuilder x){
+        x.append("NEW");
+        System.out.println("local scope: x in String Builder->"+x);
     }
 
     public static void arrayFxn(String[] xx){
