@@ -1,6 +1,7 @@
 package Day_2025_11_04;
 
 
+import java.util.Collection;
 
 class X
 {
@@ -33,12 +34,16 @@ class Y extends X
     }
 }
 
-public class Blank {
-    public static void main(String[] args)
-    {
-        Y y = new Y();
-        System.out.println(y.m);
-        y.doIT();
+//public class Blank {
+//    public static void main(String[] args)
+//    {
+//        Y y = new Y();
+//        System.out.println(y.m);
+//        y.doIT();
+//        Collection
+//
+//    }
+//}
 
-    }
-}
+
+
